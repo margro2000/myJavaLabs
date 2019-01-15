@@ -1,0 +1,30 @@
+1) Bad1 error:
+
+public class BAD1 {
+       ^
+1 error
+
+This is a compile-time error. The reason for this error is that the class name must match the filename, including the case. By converting the case of the class name to match the filename, the error was fixed.
+
+
+2) Bad2 error:
+
+Exception in thread "main" java.util.IllegalFormatConversionException: d != java.lang.String
+	at java.base/java.util.Formatter$FormatSpecifier.failConversion(Formatter.java:4426)
+	at java.base/java.util.Formatter$FormatSpecifier.printInteger(Formatter.java:2938)
+	at java.base/java.util.Formatter$FormatSpecifier.print(Formatter.java:2892)
+	at java.base/java.util.Formatter.format(Formatter.java:2673)
+	at java.base/java.io.PrintStream.format(PrintStream.java:1053)
+	at java.base/java.io.PrintStream.printf(PrintStream.java:949)
+	at Bad2.main(Bad2.java:6)
+
+  This is a run-time error. The reason for this error is that that the variables day and year are declared as strings, and you cannot print out a string as if it was a double. By changing the variables to int values, they can be printed out as ints.
+
+  3) Bad3 error:
+
+  reached end of file while parsing
+   }
+    ^
+ 1 error
+
+This is a compile-time error. This error occurs because there needs to be an enclosing '}' tag.
