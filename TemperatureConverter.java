@@ -7,11 +7,11 @@ public class TemperatureConverter {
 
       Scanner scan = new Scanner (System.in);
       System.out.println("Enter a temperature in Kelvin:");
-      double kelvin = scan.nextDouble();
+      String stringKelvin = scan.nextLine();
+      double kelvin = Double.parseDouble(stringKelvin);
 
-      double farenheit = (kelvin * 1.8 - 459.67); 
-      System.out.printf(kelvin + " Kelvin is %.2f degrees Farenheit", farenheit);
-
-
+      double fahrenheit = (kelvin * (1.8) - 459.67);
+      // System.out.printf(stringKelvin + " Kelvin is %.2f degrees Fahrenheit", fahrenheit);
+      System.out.printf("%s Kelvin is %.2f degrees Fahrenheit\n", stringKelvin, fahrenheit);
   }
 }
