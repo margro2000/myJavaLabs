@@ -7,6 +7,7 @@ public class Lesson9 {
 	  private static int numStudents;
 	  public String favoriteMonth(String name) {
 		  return name;
+		    
 	  }
 
 	  /*
